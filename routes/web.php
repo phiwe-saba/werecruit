@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/vacancies', 'App\Http\Controllers\VacancyController@index')->name("vacancies.index");

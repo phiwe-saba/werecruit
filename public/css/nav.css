@@ -1,0 +1,209 @@
+nav{
+    background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+
+/* Header Section */
+.header{
+    padding: 60px 0;
+}
+
+.header img{
+    max-width: 50%;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-align: left;
+    padding-top: 0px;
+}
+
+.header p{
+    font-size: 1.6rem;
+    color: black;
+    text-align: left;
+}
+
+.container button{
+    background-color: rgb(66, 125, 214);
+    border-style: none;
+    border-radius: 10px;
+    font-size:20px;
+    color:white;
+    padding:10px;
+}
+
+.container button a{
+    text-decoration: none;
+    color: white;
+}
+.container button:hover{
+    background-color: gray;
+}
+
+/* Main Section */
+.main-section .container{
+    min-height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.main-section .sub-logo{
+    text-align: center;
+    line-height: inherit
+}
+
+.main-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box h3{
+    font-size: 18px;
+}
+.box{
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex: 1;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 20px 25px;
+    margin: 0 25px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+/* Body Section */
+.body-section .container{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.body-section .container img{
+    width: 450px;
+    height:300px;
+}
+
+/* Blog Section */
+.blog-section .container{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.blog-section .container img{
+    width: 450px;
+    height: 300px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
+    padding: 15px;
+    color: white;
+}
+
+@media(max-width: 768px){
+    .navbar .container ul li{
+        font-size: 15px;
+    }
+
+    .navbar .container ul li a{
+        margin: 0;
+    }
+
+    .navbar .container .logo{
+        font-size: 20px;
+    }
+
+    .header .container{
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+
+    .header img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header .container h1{
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .header .container p{
+        font-size: larger;
+        text-align: center;
+    }
+
+    .header .container button{
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .main-section .container{
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+
+    .main-section .container .box{
+        margin: 25px;
+    }
+
+    .body-section .container{
+        flex-direction:column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .body-section .container img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .body-section .container button{
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .blog-section .container{
+        text-align: center;
+        flex-direction:column-reverse;
+        padding: 25px;
+    }
+
+    .blog-section .container img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blog-section .container button{
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
