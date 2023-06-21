@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href = "{{ asset('../css/nav.css')}}" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">We-Recruit</a>
-          <ul class="d-class">
-            <li id="header-links"><a href="{{ route('vacancy.index') }}">Vacancy</a></li>
-            <li id="header-links"><a href="application.html">Apply</a></li>
-          </ul>
-        </div>
-    </nav>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand">We-Recruit</a>
+      <div class="d-class m-3">
+        <a href="">Vacancies</a>
+        <a href="">Explore</a>
+        <a href="application.html">Community</a>
+      </div>
+    </div>
+  </nav>
     <div>
         @yield('content')
     </div>

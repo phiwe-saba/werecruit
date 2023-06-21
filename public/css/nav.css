@@ -34,15 +34,17 @@ nav a{
     line-height: 1.2;
     text-align: left;
     padding-top: 0px;
+    margin-left: 24px;
 }
 
 .header p{
     font-size: 1.6rem;
     color: black;
     text-align: left;
+    margin-left: 24px;
 }
 
-.container button{
+.header .container button{
     background-color: rgb(66, 125, 214);
     border-style: none;
     border-radius: 10px;
@@ -61,7 +63,7 @@ nav a{
 
 /* Main Section */
 .main-section .container{
-    min-height: 60vh;
+    min-height: 40vh;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -81,6 +83,7 @@ nav a{
 .box h3{
     font-size: 18px;
 }
+
 .box{
     align-items: center;
     text-align: center;
@@ -94,11 +97,79 @@ nav a{
     box-shadow: 10px 10px 5px lightblue;
 }
 
+/**Search bar*/
+.search-bar{
+    background-color: #E5E7EB;
+    padding-bottom:80px;
+}
+
+.content-bar{
+    text-align:center;
+    padding-bottom: 10px;
+}
+
+.content-bar input{
+    padding: 10px 0;
+    border: 1px solid;
+    text-align: center;
+}
+
+input, select, button{
+    border-radius: 20px;
+    padding:10px 35px;
+    margin:25px;
+    font-size:18px;
+    color:grey;
+}
+.content-bar button{
+    background-color: rgb(66, 125, 214);
+    border:1px;
+    color:white;
+}
+
+.content-bar button:hover{
+    background-color:gray;
+}
+
+.container .card{
+    margin:15px;
+    padding:20px;
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 8px;
+}
+
+.container .card a{
+    text-decoration: none;
+    color:rgb(77, 72, 72);
+}
+
+.container .card h2{
+    font-size: 18px;
+    font-style: bold;
+}
+
+.container .card p{
+    margin: 5px 0 ;
+}
+
+.container .card button{
+    font-size: 15px;
+    margin:14px 10px 0px 1px;
+    border: 1px;
+    padding:10px 25px;
+    background-color: rgb(66, 125, 214);
+    color: white;
+}
+
+.container .card button:hover{
+    background-color:gray;
+}
 /* Body Section */
 .body-section .container{
     min-height: 60vh;
     display: flex;
     align-items: center;
+   
 }
 
 .body-section .container img{
@@ -106,9 +177,13 @@ nav a{
     height:300px;
 }
 
+.body-section .container #text{
+    padding-left: 20px;
+}
+
 /* Blog Section */
 .blog-section .container{
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
 }

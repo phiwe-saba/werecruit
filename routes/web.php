@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 
 Route::get('/vacancies', 'App\Http\Controllers\VacancyController@index')->name("vacancies.index");
+Route::get('/vacancies/{id}', 'App\Http\Controllers\VacancyController@show')->name("vacancies.show");
+
+Route::get('/admin/vacancy', 'App\Http\Controllers\AdminVacancyController@index')->name("admin.vacancy.index");

@@ -13,9 +13,9 @@
         <div class="container">
           <a class="navbar-brand">We-Recruit</a>
           <div class="d-class m-3">
-            <a href="">Vacancy</a>
-            <a href="">Vacancy</a>
-            <a href="application.html">Apply</a>
+            <a href="">Vacancies</a>
+            <a href="">Explore</a>
+            <a href="application.html">Community</a>
           </div>
         </div>
     </nav>
@@ -29,7 +29,6 @@
             <img src=" {{ asset('/images/iStock.jpg') }}" alt="">
         </div>
     </div>
-    
     <div class="main-section">
         <div class="container">
             <div class="box">
