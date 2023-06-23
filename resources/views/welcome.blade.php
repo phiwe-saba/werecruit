@@ -11,9 +11,9 @@
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand">We-Recruit</a>
+          <a  class="navbar-brand">We - Recruit</a>
           <div class="d-class m-3">
-            <a href="">Vacancies</a>
+            <a href="{{ route('vacancies.index') }}">Vacancies</a>
             <a href="">Explore</a>
             <a href="application.html">Community</a>
           </div>
@@ -58,7 +58,7 @@
                    Easily search, apply and start your career on We-Recruit’s job board.
                    engagements are full-time and long-term. As one project nears completion, our team goes to work to identify the next one for you within weeks.
                 </p>
-                <button><a href="vacancies.html">Find vacancies.</a></button>
+                <button><a href="{{ route('vacancies.index') }}">Find vacancies.</a></button>
             </div>
         </div>
     </div>

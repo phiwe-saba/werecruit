@@ -30,7 +30,7 @@ class AdminVacancyController extends Controller
 
         $vacancy = Vacancy::create($viewData);
 
-        return redirect()->route('admin.vacancies.show', $vacancy->id);
+        return redirect()->route('admin.vacancies.show', $vacancy->id)->with('success', 'Vacancy created successfully!');
     }
 
     public function show(vacancy $vacancy)
@@ -44,11 +44,26 @@ class AdminVacancyController extends Controller
         return view('admin.vacancies.edit', compact('vacancy'));
     }
 
+    public function update(Request $request, Vacancy $vacancy)
+    {
+        $viewData = $request->validate([
+            'job_title' => 'required',
+            'job_field' => 'required',
+            'location' => 'required',
+            'job_type' => 'required',
+            'description' => 'required'
+        ]);
+
+        $vacancy->update($viewData);
+
+        return redirect()->route('admin.vacancies.index')->with('success', 'Vacancy updated successfully!');
+    }
+
     public function destroy($id)
     {
         $vacancy = Vacancy::findOrFail($id);
         $vacancy->delete();
 
-        return redirect()->route('admin.vacancies.index');
+        return redirect()->route('admin.vacancies.index')->with('success', 'Vacancy deleted successfully!');
     }
 }

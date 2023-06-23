@@ -100,7 +100,20 @@ nav a{
 /**Search bar*/
 .search-bar{
     background-color: #E5E7EB;
-    padding-bottom:80px;
+    min-height: 55vh;
+}
+
+.search-bar .header-section{
+    text-align: center;
+    padding: 50px;
+}
+
+.search-bar .header-section h1{
+    font-size: 45px;
+}
+
+.search-bar .header-section p{
+    font-size: 35px;
 }
 
 .content-bar{
@@ -115,7 +128,7 @@ nav a{
 }
 
 input, select, button{
-    border-radius: 20px;
+    border-radius: 18px;
     padding:10px 35px;
     margin:25px;
     font-size:18px;
@@ -164,6 +177,7 @@ input, select, button{
 .container .card button:hover{
     background-color:gray;
 }
+
 /* Body Section */
 .body-section .container{
     min-height: 60vh;

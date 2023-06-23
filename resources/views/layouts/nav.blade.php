@@ -13,16 +13,18 @@
     <div class="container">
       <a class="navbar-brand">We-Recruit</a>
       <div class="d-class m-3">
-        <a href="">Vacancies</a>
+        <a href="{{ route('vacancies.index') }}">Vacancies</a>
         <a href="">Explore</a>
         <a href="application.html">Community</a>
       </div>
     </div>
   </nav>
-    <div>
-        @yield('content')
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <div>
+      @yield('content')
+  </div>
+  <footer>
+    <p>We-Recruit Pty Ltd 2022 - Phiwe Saba</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
