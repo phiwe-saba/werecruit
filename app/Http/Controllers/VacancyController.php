@@ -7,9 +7,31 @@ use App\Models\Vacancy;
 
 class VacancyController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $vacancies = Vacancy::all();
+
+
+        $job_title = $request->input('job_title');
+        $location = $request->input('location');
+        $job_type = $request->input('job_type');
+
+        $query = Vacancy::query();
+
+        if($job_title){
+            $query->where('job_title', 'LIKE', "%job_title%");
+        }
+
+        if($location){
+            $query->where('location', $location);
+        }
+
+        if($job_type){
+            $query->where('job_type', $job_type);
+        }
+
+        $vacancies = $query->get();
+        
         return view('vacancies.index', compact('vacancies'));
     }
 

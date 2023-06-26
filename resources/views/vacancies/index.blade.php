@@ -8,22 +8,25 @@
             <p>Explore available jobs</p>
         </div>
         <div class="content-bar">
-            <input type="text" placeholder="Job title">
-            <select class="location">
-                <option selected="">Select location</option>
-                <option value="1">Gauteng</option>
-                <option value="2">Cape Town</option>
-                <option value="3">Durban</option>
-                <option value="3">Port Elizabeth</option>
-                <option value="3">Northern Cape</option>
-            </select>
-            <select class="job-type">
-                <option selected="">Select job type</option>
-                <option value="1">Hybrid</option>
-                <option value="2">Remote</option>
-                <option value="3">On-site</option>
-            </select>
-            <button type="submit">Search</button>  
+            <form action="{{ route('vacancies.index') }}" method="GET">
+                <input type="text" name="job_title" placeholder="Job title" value="{{ request('job_title') }}">
+                <select name="location" class="location">
+                    <option selected="">Select location</option>
+                    <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                    <option value="Cape Town" {{ request('location') === 'Cape Town' ? 'selected' : ''}}>Cape Town</option>
+                    <option value="Durban" {{ request('location') === 'Durban' ? 'selected' : ''}}>Durban</option>
+                    <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                    <option value="Port Elizabeth" {{ request('location') === 'Port Elizabeth' ? 'selected' : ''}}>Port Elizabeth</option>
+                    <option value="Northen Cape" {{ request('location') === 'Northen Cape' ? 'selected' : ''}}>Northen Cape</option>
+                </select>
+                <select name="job_type" class="job-type">
+                    <option selected="">Select job type</option>
+                    <option value="Hybrid" {{ request('job_type') === 'Hybrid' ? 'selected' : ''}}>Hybrid</option>
+                    <option value="Remote" {{ request('job_type') === 'Remote' ? 'selected' : ''}}>Remote</option>
+                    <option value="On-site" {{ request('job_type') === 'On-site' ? 'selected' : ''}}>On-site</option>
+                </select>
+                <button type="submit">Search</button>  
+            </form>
         </div>
     </div>
 
