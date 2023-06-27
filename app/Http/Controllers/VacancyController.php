@@ -54,8 +54,9 @@ class VacancyController extends Controller
         return redirect()->route('vacancies.show', $vacancy->id);
     }
 
-    public function show(vacancy $vacancy)
+    public function show(vacancy $vacancy, $id)
     {
+        $vacancy = Vacancy::findOrFail($id);
         return view('vacancies.show', compact('vacancy'));
     }
 

@@ -38,9 +38,9 @@ class AdminVacancyController extends Controller
         return view('admin.vacancies.show', compact('vacancy'));
     }
 
-    public function edit($id)
+    public function edit(Vacancy $vacancy)
     {
-        $vacancy = Vacancy::findOrFail($id);
+        //$vacancy = Vacancy::findOrFail($id);
         return view('admin.vacancies.edit', compact('vacancy'));
     }
 

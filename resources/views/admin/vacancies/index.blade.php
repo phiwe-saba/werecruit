@@ -25,17 +25,18 @@
                         <td>{{ $vacancy->job_field }}</td>
                         <td>{{ $vacancy->location }}</td>
                         <td>{{ $vacancy->job_type }}</td>
+                        
                         <td>
-                            <a class="btn btn-primary" href="{{route('admin.vacancies.edit', ['id'=> $vacancy->id])}}">
+                            <a class="btn btn-primary" href="{{ route('admin.vacancies.edit', $vacancy->id) }}">
                                 <i class="bi-pencil"></i>
                             </a>
                         </td>
                         <td>
-                            <form action="{{ route('admin.vacancies.destroy', $vacancy->id)}}" method="POST">
+                            <form action="{{ route('admin.vacancies.destroy', $vacancy->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger">
-                                <i class="bi-trash"></i>
+                                    <i class="bi-trash"></i>
                                 </button>
                             </form>
                         </td>
