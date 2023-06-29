@@ -18,7 +18,7 @@
               <a href="{{ route('vacancies.index') }}" class="navbar-brand">We - Recruit</a>
               <div class="d-class m-3">
                 <a href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
-                <a href="application.html">Logout</a>
+                <a href="{{ route('vacancies.index') }}">Logout</a>
               </div>
             </div>
           </nav>
