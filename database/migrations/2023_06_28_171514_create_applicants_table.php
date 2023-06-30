@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('email');
-            $table->string('path');
+            $table->string('upload_resume');   //file upload
             $table->timestamps();
 
         });

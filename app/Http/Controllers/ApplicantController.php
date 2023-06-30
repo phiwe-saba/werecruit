@@ -11,6 +11,7 @@ class ApplicantController extends Controller
     {
         $applicants = Applicant::all();
 
+        return view('applicants.apply', compact('applicants'));
     }
 
     public function create()
@@ -24,15 +25,23 @@ class ApplicantController extends Controller
             'name' => 'required',
             'surname' => 'required',
             'email' => 'required',
-            'path' => 'required|mimes:pdf,doc,docx'
+            'resume' => 'required|mimes:pdf,doc,docx'
         ]);
 
-        $applicantFile = $request->file('path');
-        $applicantName = $applicantFile->getClientOriginalName();
-        $filePath = $applicantFile->storeAs('uploads', $applicantName);
+        //$applicantFile = $viewData->file('resume');
+        //$applicantName = $applicantFile->getClientOriginalName();
+        //$filePath = $applicantFile->storeAs('uploads', $applicantName);
 
+        /*$vacancy = Applicant::create('');
         Applicant::create([
             'path' => $filePath,
-        ]);
+        ]);*/
     }
+
+    /*public function update(Request $request, Applicant $applicant)
+    {
+        $applicant->vacancies()->sync($request->input('vacancy_ids'));
+
+        return redirect()->route('applicants.index');
+    }*/
 }

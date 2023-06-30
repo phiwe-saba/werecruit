@@ -9,5 +9,11 @@ class Applicant extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'surname', 'email', 'path'];
+    protected $fillable = ['name', 'surname', 'email', 'upload_resume'];
+
+    //Relationship with vacancies
+    public function vacancies()
+    {
+        return $this->belongsToMany(Vacancy::class, 'applicant_id');
+    }
 }
