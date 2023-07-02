@@ -153,16 +153,18 @@ input, select, button{
 
 .container .card a{
     text-decoration: none;
-    color:rgb(77, 72, 72);
+    color:white;
 }
 
 .container .card h2{
     font-size: 18px;
     font-style: bold;
+    color:rgb(77, 72, 72);
 }
 
 .container .card p{
     margin: 5px 0 ;
+    color:rgb(77, 72, 72);
 }
 
 .container .card button{
@@ -174,6 +176,9 @@ input, select, button{
     color: white;
 }
 
+.container .card .card-body button a{
+    background-color: white;
+}
 .container .card button:hover{
     background-color:gray;
 }

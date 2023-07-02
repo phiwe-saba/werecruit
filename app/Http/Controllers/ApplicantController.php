@@ -21,21 +21,23 @@ class ApplicantController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $viewData = $request->validate([
             'name' => 'required',
             'surname' => 'required',
             'email' => 'required',
-            'resume' => 'required|mimes:pdf,doc,docx'
+            'upload_resume' => 'required|mimes:pdf,doc,docx'
         ]);
 
-        //$applicantFile = $viewData->file('resume');
-        //$applicantName = $applicantFile->getClientOriginalName();
-        //$filePath = $applicantFile->storeAs('uploads', $applicantName);
+        if($request->hasFile('upload_resume')){
+            $upload_resume = $request->upload_file('upload_resume');
+            $fileName = time() . '_' . $upload_resume->getClientOriginalName();
+            $upload_resume->storeAs('uploads', $fileName);
+            $viewData['upload_resume'] = $fileName;
+        }
+        
+        Applicant::create($viewData);
 
-        /*$vacancy = Applicant::create('');
-        Applicant::create([
-            'path' => $filePath,
-        ]);*/
+        return redirect()->route('applicants.apply')->with('success', 'Successfully applied.');
     }
 
     /*public function update(Request $request, Applicant $applicant)

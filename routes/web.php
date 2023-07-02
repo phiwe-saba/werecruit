@@ -36,6 +36,7 @@ Route::put('/admin/vacancies/{id}', 'App\Http\Controllers\AdminVacancyController
 
 /* Applicants Route */
 Route::get('/applicants', 'App\Http\Controllers\ApplicantController@index')->name("applicants.apply");
+Route::post('/applicants', 'App\Http\Controllers\ApplicantController@store')->name("vacancies.index");
 
 /*
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
