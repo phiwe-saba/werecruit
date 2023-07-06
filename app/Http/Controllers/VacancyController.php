@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Vacancy;
+use App\Models\Applicant;
 
 class VacancyController extends Controller
 {
@@ -35,12 +36,12 @@ class VacancyController extends Controller
         return view('vacancies.index', compact('vacancies'));
     }
 
-    public function create()
+    public function create(Applicant $applicant)
     {
-        return view('cities.create');
+        return view('cities.create', compact('$applicant'));
     }
 
-    public function store(Request $request)
+    public function store(Request $request, Applicant $applicant)
     {
         $viewData = $request->validate([
             'job_title' => 'required',
@@ -49,9 +50,9 @@ class VacancyController extends Controller
             'job_type' => 'required'
         ]);
 
-        $vacancy = Vacancy::create($viewData);
+        $applicant->vacancies()->create($viewData); 
 
-        return redirect()->route('vacancies.show', $vacancy->id);
+        return redirect()->route('vacancies.show');
     }
 
     public function show(Vacancy $vacancy, $id)

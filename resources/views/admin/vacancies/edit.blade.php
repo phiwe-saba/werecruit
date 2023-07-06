@@ -12,7 +12,7 @@
 
                 <div class="mb-3">
                     <label class="form-label">Job Title:</label>
-                    <input name="job_title" value="{{$vacancy->job_title}}" id="job_title" type="text" class="form-control">
+                    <input name="job_title" value="{{$vacancy->job_title}}" id="job_title" type="text" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Job Field:</label>

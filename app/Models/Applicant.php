@@ -14,6 +14,6 @@ class Applicant extends Model
     //Relationship with vacancies
     public function vacancies()
     {
-        return $this->belongsToMany(Vacancy::class, 'applicant_id');
+        return $this->hasMany(Vacancy::class, 'applicant_id');
     }
 }
