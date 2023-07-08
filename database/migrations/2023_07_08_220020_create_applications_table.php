@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('vacancies', function (Blueprint $table) {
+        Schema::create('applications', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('applicant_id')->constrained()->onDelete('cascade');
-            $table->string('job_title');
-            $table->string('job_field');
-            $table->string('location');
-            $table->string('job_type');
-            $table->string('description');
+            $table->unsignedBigInteger('vacancy_id');
+            $table->foreign('vacancy_id')->references('id')->on('vacancy')->onDelete('cascade');
+            $table->string('name');
+            $table->string('surname');
+            $table->string('email');
+            $table->string('upload_resume');   //file upload
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vacancies');
+        Schema::dropIfExists('applications');
     }
 };

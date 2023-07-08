@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Applicant;
+use App\Models\Application;
 use App\Models\Vacancy;
 
-class ApplicantController extends Controller
+class ApplicationController extends Controller
 {
     public function index()
     {
         //$applicants = Applicant::all();
-        $applicants = Applicant::with('vacancies')->get();
+        $applicants = Application::with('vacancies')->get();
         return view('applicants.index', compact('applicants'));
     }
 
@@ -30,18 +30,18 @@ class ApplicantController extends Controller
         ]);
 
         if($request->hasFile('upload_resume')){
-            $upload_resume = $request->upload_file('upload_resume');
+            $upload_resume = $request->file('upload_resume');
             $fileName = time() . '_' . $upload_resume->getClientOriginalName();
             $upload_resume->storeAs('uploads', $fileName);
             $viewData['upload_resume'] = $fileName;
         }
         
-        $applicant = Applicant::create($viewData);
+        $applicant = Application::create($viewData);
         dd($applicant);
         return redirect()->route('applicants.index')->with('success', 'Successfully applied.');
     }
 
-    public function destroy(Applicant $applicant)
+    public function destroy(Application $applicant)
     {
         $applicant->delete();
         return redirect()->route('applicants.apply')->with('success', 'Applicant deleted successfully');

@@ -11,9 +11,9 @@ class Vacancy extends Model
 
     protected $fillable = ['job_title', 'job_field', 'location', 'job_type', 'description'];
 
-    //Relationship to applicant
-    public function applicant()
+    //Relationship to application
+    public function applications()
     {
-        return $this->belongsTo(Applicant::class, 'applicant_id');
+        return $this->hasMany(Application::class);
     }
 }

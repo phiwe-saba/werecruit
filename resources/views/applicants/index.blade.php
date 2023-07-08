@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
           <label for="file">Upload resume:</label>
-          <input type="file" id="file_upload" name="file_upload" required>
+          <input type="file" id="upload_resume" name="upload_resume" required>
         </div>
         <div class="form-group">
           <button type="submit">Apply</button>
