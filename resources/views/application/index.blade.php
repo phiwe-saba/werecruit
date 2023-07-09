@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
   <div class="container">
-    <form action="{{ route('applicants.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('application.store') }}" method="POST" enctype="multipart/form-data">
       @csrf  
       <h2><a href="{{ route('vacancies.index') }}">We - Recruit</a></h2>
         

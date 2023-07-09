@@ -38,7 +38,7 @@
                     <h2>{{ $vacancy->job_title}}</h2>
                     <p>{{ $vacancy->job_field}}</p>
                     <p>{{ $vacancy->job_type}} | {{ $vacancy->location}}</p>
-                    <a class="btn btn-primary" href="{{ route('applicants.index') }}">Apply</a>
+                    <a class="btn btn-primary" href="{{ route('application.index') }}">Apply</a>
                 </a>
             </div>
         </div>

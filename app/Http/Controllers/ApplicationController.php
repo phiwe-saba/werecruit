@@ -8,16 +8,16 @@ use App\Models\Vacancy;
 
 class ApplicationController extends Controller
 {
-    public function index()
+    public function index(Vacancy $vacancy)
     {
         //$applicants = Applicant::all();
-        $applicants = Application::with('vacancies')->get();
-        return view('applicants.index', compact('applicants'));
+        //$applicants = Application::with('vacancies')->get();
+        return view('application.index', compact('vacancy'));
     }
 
     public function create(Vacancy $vacancy)
     {
-        return view('applicants.create', compact('vacancy'));
+        return view('application.create', compact('vacancy'));
     }
 
     public function store(Request $request)
@@ -36,14 +36,21 @@ class ApplicationController extends Controller
             $viewData['upload_resume'] = $fileName;
         }
         
-        $applicant = Application::create($viewData);
-        dd($applicant);
-        return redirect()->route('applicants.index')->with('success', 'Successfully applied.');
+        $vacancy = Vacancy::findOrFail($request->vacancy_id);
+        
+        $application = new Application($viewData);
+        $application->vacancy()->associate($vacancy);
+        $application->save();
+
+        //$vacancy->applications()->create($viewData);
+        //$applicant = Application::create($viewData);
+        dd($application);
+        return redirect()->route('vacancies.index')->with('success', 'Successfully applied.');
     }
 
     public function destroy(Application $applicant)
     {
         $applicant->delete();
-        return redirect()->route('applicants.apply')->with('success', 'Applicant deleted successfully');
+        return redirect()->route('application.index')->with('success', 'Applicant deleted successfully');
     }
 }

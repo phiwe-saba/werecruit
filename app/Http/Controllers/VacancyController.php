@@ -36,21 +36,14 @@ class VacancyController extends Controller
         return view('vacancies.index', compact('vacancies'));
     }
 
-    public function create(Applicant $applicant)
-    {
-        return view('cities.create', compact('$applicant'));
-    }
-
-    public function store(Request $request, Applicant $applicant)
+    public function store(Request $request)
     {
         $viewData = $request->validate([
             'job_title' => 'required',
             'job_field' => 'required',
             'location' => 'required',
             'job_type' => 'required'
-        ]);
-
-        $applicant->vacancies()->create($viewData); 
+        ]); 
 
         return redirect()->route('vacancies.show');
     }
