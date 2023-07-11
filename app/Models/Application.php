@@ -12,8 +12,8 @@ class Application extends Model
     protected $fillable = ['name', 'surname', 'email', 'upload_resume'];
 
     //Relationship with vacancies
-    public function vacancies()
+    public function vacancy()
     {
-        return $this->belongsTo(Application::class);
+        return $this->belongsTo(Vacancy::class);
     }
 }

@@ -35,14 +35,9 @@ Route::put('/admin/vacancies/{id}', 'App\Http\Controllers\AdminVacancyController
 
 
 /* Applicants Route */
-Route::get('/application', 'App\Http\Controllers\ApplicationController@index')->name("application.index");
-Route::post('/application', 'App\Http\Controllers\ApplicationController@store')->name("application.store");
+//Route::get('/application', 'App\Http\Controllers\ApplicationController@index')->name("application.index");
+//Route::get('/application/create', 'App\Http\Controllers\ApplicationController@create')->name("application.create");
+//Route::post('/application', 'App\Http\Controllers\ApplicationController@store')->name("application.store");
+Route::get('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@create')->name('application.create');
+Route::post('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@store')->name('application.store');
 
-/*
-Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
-Route::get('/appointments/create', [AppointmentController::class, 'create'])->name('appointments.create');
-Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
-Route::get('/appointments/{appointment}', [AppointmentController::class, 'show'])->name('appointments.show');
-Route::get('/appointments/{appointment}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
-Route::put('/appointments/{appointment}', [AppointmentController::class, 'update'])->name('appointments.update');
-Route::delete('/appointments/{appointment}', [AppointmentController::class, 'destroy'])->name('appointments.destroy');*/

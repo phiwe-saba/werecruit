@@ -12,7 +12,6 @@ class VacancyController extends Controller
     {
         $vacancies = Vacancy::all();
 
-
         $job_title = $request->input('job_title');
         $location = $request->input('location');
         $job_type = $request->input('job_type');
