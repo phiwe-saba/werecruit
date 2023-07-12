@@ -15,53 +15,34 @@ nav a{
     font-size: 25px;
 }
 
-/* Header Section */
-.header{
-    padding: 60px 0;
-}
-
-.header img{
-    max-width: 50%;
-}
-
-.header .container{
-    display: flex;
-    align-items: center;
-}
-
-.header h1{
-    font-size: 2.8rem;
-    line-height: 1.2;
-    text-align: left;
-    padding-top: 0px;
-    margin-left: 24px;
-}
-
-.header p{
-    font-size: 1.6rem;
-    color: black;
-    text-align: left;
-    margin-left: 24px;
-}
-
-.header .container button{
-    background-color: rgb(66, 125, 214);
-    border-style: none;
-    border-radius: 10px;
-    font-size:20px;
-    color:white;
-    padding:10px;
-}
-
-.container button a{
+button a{
     text-decoration: none;
-    color: white;
+    color:white;
 }
-.container button:hover{
-    background-color: gray;
+
+.container .col-sm-6 img{
+    max-width: 100%;
 }
 
 /* Main Section */
+.container .d-flex .p-2 h3{
+    font-size: 18px;
+}
+
+.container .d-flex .p-2{
+    text-align: center;
+    flex: 1;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    margin: 0 25px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.container .row .col-4 img{
+    max-width: 100%;
+}
+/* Main Section 
 .main-section .container{
     min-height: 40vh;
     justify-content: space-between;
@@ -96,7 +77,7 @@ nav a{
     margin: 0 25px;
     box-shadow: 10px 10px 5px lightblue;
 }
-
+*/
 /**Search bar*/
 .search-bar{
     background-color: #E5E7EB;
