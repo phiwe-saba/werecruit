@@ -44,6 +44,7 @@ h2 a{
 h2 a:hover{
   color: white;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -93,13 +94,11 @@ select {
   border-radius: 5px;
 }
 
-
 @media screen and (max-width: 768px) {
   form {
     padding: 10px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .nav-links {

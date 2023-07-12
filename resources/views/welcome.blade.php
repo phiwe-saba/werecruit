@@ -19,58 +19,64 @@
           </div>
         </div>
     </nav>
-    <div class="header">
-        <div class="container">
-            <div>
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-sm-6 mt-5">
                 <h1>Land your first job with us!</h1>
                 <p>Join a network of the world's best developers & get full-time, long-term remote software jobs with better compensation and career growth.</p>
-                <button>Apply now</button>
+                <button class="btn btn-primary btn-lg m-1">Apply</button>
             </div>
-            <img src=" {{ asset('/images/iStock.jpg') }}" alt="">
+            <div class="col-sm-6">
+                <img src=" {{ asset('/images/iStock.jpg') }}" alt="">
+            </div>
         </div>
     </div>
-    <div class="main-section">
-        <div class="container">
-            <div class="box">
+    <div class="container">
+        <div class="d-flex justify-content-around mb-3">
+            <div class="p-2">
                 <h3>Browse jobs</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia fugit iure ullam, est quasi aliquid distinctio incidunt magnam quas, deleniti aliquam in aut quidem, deserunt nostrum perferendis architecto nulla.</p>
             </div>
-            <div class="box">
+            <div class="p-2">
                 <h3>Receive job offer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia fugit iure ullam, est quasi aliquid distinctio incidunt magnam quas, deleniti aliquam in aut quidem, deserunt nostrum perferendis architecto nulla.</p>
             </div>
-            <div class="box">
+            <div class="p-2">
                 <h3>Start working</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia fugit iure ullam, est quasi aliquid distinctio incidunt magnam quas, deleniti aliquam in aut quidem, deserunt nostrum perferendis architecto nulla.</p>
             </div>
-            <div class="box">
+            <div class="p-2">
                 <h3>Start working</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia fugit iure ullam, est quasi aliquid distinctio incidunt magnam quas, deleniti aliquam in aut quidem, deserunt nostrum perferendis architecto nulla.</p>
             </div>
         </div>
-    </div>
-    <div class="body-section">
-        <div class="container">
-            <img src=" {{ asset('/images/community.jpg') }}" alt="">
-            <div id="text">
+        <div class="row">
+            <div class="col-4 p-4">
+                <img src=" {{ asset('/images/community.jpg') }}" alt="">
+            </div>
+            <div class="col-8 p-4">
                 <h1>Let us help you find your next career.</h1>
                 <p>Explore over one million jobs and internships that are updated daily. 
                    Easily search, apply and start your career on We-Recruit’s job board.
                    engagements are full-time and long-term. As one project nears completion, our team goes to work to identify the next one for you within weeks.
                 </p>
-                <button><a href="{{ route('vacancies.index') }}">Find vacancies.</a></button>
+                <button class="btn btn-primary btn-lg m-1">
+                    <a href="{{ route('vacancies.index') }}">Find vacancies.</a>
+                </button>
             </div>
         </div>
-    </div>
-    <div class="blog-section">
-        <div class="container">
-            <div id="text">
+        <div class="row">
+            <div class="col-8 p-4">
                 <h1>Join the community of best remote engineers</h1>
                 <p>Sign-up to our blog to be updated on the latest jobs and newsletter. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                    Incidunt fugit eligendi quae, explicabo laudantium dignissimos tempora, ipsum suscipit voluptas est nihil impedit doloribus quasi porro, necessitatibus nemo ad officia cum.</p>
-                <button><a href="blog.html">Join our blog!!</a></button>
+                   <button class="btn btn-primary btn-lg m-1">
+                    <a href="{{ route('vacancies.index') }}">Join our blog.</a>
+                </button>
             </div>
-            <img src=" {{ asset('/images/community.png') }}" alt="">
+            <div class="col-4 p-4">
+                <img src=" {{ asset('/images/community.png') }}" alt="">
+            </div>
         </div>
     </div>
     <footer>
