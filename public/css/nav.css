@@ -1,30 +1,18 @@
-nav{
-    background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
-
-}
-
-nav a{
-    text-decoration: none;
+/* Navbar */
+.container .navbar-nav .nav-item .nav-link{
     color: white;
     font-size: 18px;
-    padding: 10px;
 }
 
-.navbar-brand{
-    color: white;
-    font-size: 25px;
+nav{
+    background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
 }
 
-button a{
-    text-decoration: none;
-    color:white;
-}
-
+/* Main Section */
 .container .col-sm-6 img{
     max-width: 100%;
 }
 
-/* Main Section */
 .container .d-flex .p-2 h3{
     font-size: 18px;
 }
@@ -39,46 +27,11 @@ button a{
     box-shadow: 10px 10px 5px lightblue;
 }
 
-.container .row .col-4 img{
+.container .row .col-lg-4 img{
     max-width: 100%;
 }
-/* Main Section 
-.main-section .container{
-    min-height: 40vh;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
 
-.main-section .sub-logo{
-    text-align: center;
-    line-height: inherit
-}
-
-.main-section .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.box h3{
-    font-size: 18px;
-}
-
-.box{
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    flex: 1;
-    background-color: #E5E7EB;
-    border-radius: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-    padding: 20px 25px;
-    margin: 0 25px;
-    box-shadow: 10px 10px 5px lightblue;
-}
-*/
-/**Search bar*/
+/* Search bar */
 .search-bar{
     background-color: #E5E7EB;
     min-height: 55vh;
@@ -164,33 +117,9 @@ input, select, button{
     background-color:gray;
 }
 
-/* Body Section */
-.body-section .container{
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-   
-}
-
-.body-section .container img{
-    width: 450px;
-    height:300px;
-}
-
-.body-section .container #text{
-    padding-left: 20px;
-}
-
-/* Blog Section */
-.blog-section .container{
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-}
-
-.blog-section .container img{
-    width: 450px;
-    height: 300px;
+button a{
+    text-decoration: none;
+    color: white
 }
 
 /* Footer */
