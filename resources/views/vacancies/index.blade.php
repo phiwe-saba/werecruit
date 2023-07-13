@@ -1,7 +1,6 @@
 @extends('layouts.nav')
 @section('content')
 
-
     <div class="search-bar">
         <div class="header-section">
             <h1>Find your next job or internship</h1>
@@ -30,18 +29,18 @@
         </div>
     </div>
 
-<div class="container">
-    @foreach($vacancies as $vacancy)
-        <div class="card">
-            <div class="card-body">
-                <a href="{{ route('vacancies.show', ['id'=>$vacancy["id"]])}}">
-                    <h2>{{ $vacancy->job_title}}</h2>
-                    <p>{{ $vacancy->job_field}}</p>
-                    <p>{{ $vacancy->job_type}} | {{ $vacancy->location}}</p>
-                    <a class="btn btn-primary" href="{{ route('application.create', $vacancy) }}">Apply</a>
-                </a>
+    <div class="container">
+        @foreach($vacancies as $vacancy)
+            <div class="card">
+                <div class="card-body">
+                    <a href="{{ route('vacancies.show', ['id'=>$vacancy["id"]])}}">
+                        <h2>{{ $vacancy->job_title}}</h2>
+                        <p>{{ $vacancy->job_field}}</p>
+                        <p>{{ $vacancy->job_type}} | {{ $vacancy->location}}</p>
+                        <a class="btn btn-primary" href="{{ route('application.create', $vacancy) }}">Apply</a>
+                    </a>
+                </div>
             </div>
-        </div>
-    @endforeach
-</div>
+        @endforeach
+    </div>
 @endsection

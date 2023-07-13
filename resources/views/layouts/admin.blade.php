@@ -10,28 +10,27 @@
     <title>@yield('title', 'Admin - Online Store')</title>
 </head>
 <body>
-<div class="row g-0">
-       
-    <div class="col content-grey">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">
-              <a href="{{ route('vacancies.index') }}" class="navbar-brand">We - Recruit</a>
-              <div class="d-class m-3">
-                <a href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
-                <a href="{{ route('vacancies.index') }}">Logout</a>
-              </div>
-            </div>
-          </nav>
-        <div class="g-0 m-5">
-            @yield('content')
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">We - Recruit</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('vacancies.index') }}">Logout</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <div>
+        @yield('content')
     </div>
-</div>
-<!-- footer -->
-<footer>
-    <p>We-Recruit Pty Ltd 2023 - Phiwe Saba</p>
-</footer>
-<!-- footer -->
+    <!-- footer -->
+    <footer>
+        <p>We-Recruit Pty Ltd 2023 - Phiwe Saba</p>
+    </footer>
+    <!-- footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
 </body>
