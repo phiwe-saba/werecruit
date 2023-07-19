@@ -31,7 +31,7 @@ nav{
     max-width: 100%;
 }
 
-/* Search bar */
+/* Search bar 
 .search-bar{
     background-color: #E5E7EB;
     min-height: 55vh;
@@ -49,7 +49,7 @@ nav{
 .search-bar .header-section p{
     font-size: 35px;
 }
-
+*/
 .content-bar{
     text-align:center;
     padding-bottom: 10px;

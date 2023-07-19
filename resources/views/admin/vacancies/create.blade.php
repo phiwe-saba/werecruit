@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 @section('title', "")
 @section('content')
-    <h1>Create Vacancy</h1>
+<div class="container">
+    <h2>Create Vacancy</h2>
     @if($errors->any())
     <ul class="alert alert-danger list-unstyled">
         @foreach($errors->all() as $error)
@@ -35,4 +36,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+</div>
 @endsection

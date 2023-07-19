@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\vacancy;
+use App\Models\Vacancy;
 
 class AdminVacancyController extends Controller
 {

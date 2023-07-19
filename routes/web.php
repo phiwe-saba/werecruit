@@ -33,11 +33,10 @@ Route::get('/admin/vacancies/{vacancy}/edit', 'App\Http\Controllers\AdminVacancy
 Route::delete('admin/vacancies/{id}', 'App\Http\Controllers\AdminVacancyController@destroy')->name("admin.vacancies.destroy");
 Route::put('/admin/vacancies/{id}', 'App\Http\Controllers\AdminVacancyController@update')->name("admin.vacancies.update");
 
+/**/
+Route::get('/admin/applications/', 'App\Http\Controllers\AdminApplicationController@index')->name("admin.applications.index");
 
 /* Applicants Route */
-//Route::get('/application', 'App\Http\Controllers\ApplicationController@index')->name("application.index");
-//Route::get('/application/create', 'App\Http\Controllers\ApplicationController@create')->name("application.create");
-//Route::post('/application', 'App\Http\Controllers\ApplicationController@store')->name("application.store");
 Route::get('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@create')->name('application.create');
 Route::post('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@store')->name('application.store');
 

@@ -15,14 +15,18 @@
             <a class="navbar-brand" href="/">We - Recruit</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
+                    <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('vacancies.index') }}">Logout</a>
+                    <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('vacancies.index') }}">Logout</a>
                 </li>
             </ul>
         </div>
     </nav>
+    
     <div>
         @yield('content')
     </div>
