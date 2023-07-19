@@ -1,10 +1,26 @@
 @extends('layouts.nav')
 @section('content')
 
-    <div class="search-bar">
+    <div class="container">
         <div class="header-section">
             <h1>Find your next job or internship</h1>
             <p>Explore available jobs</p>
+        </div>
+        <input type="text" name="job_title" placeholder="Job title" value="{{ request('job_title') }}">
+        <div class="dropdown">
+            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
+              Job Title
+            </button>
+            <select name="location" >
+                <option selected="">Select location</option>
+                <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                <option value="Cape Town" {{ request('location') === 'Cape Town' ? 'selected' : ''}}>Cape Town</option>
+                <option value="Durban" {{ request('location') === 'Durban' ? 'selected' : ''}}>Durban</option>
+                <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                <option value="Port Elizabeth" {{ request('location') === 'Port Elizabeth' ? 'selected' : ''}}>Port Elizabeth</option>
+                <option value="Northen Cape" {{ request('location') === 'Northen Cape' ? 'selected' : ''}}>Northen Cape</option>
+            </select>
+            
         </div>
         <div class="content-bar">
             <form action="{{ route('vacancies.index') }}" method="GET">
