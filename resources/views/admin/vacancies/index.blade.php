@@ -2,9 +2,11 @@
 @section('title', "")
 @section('content')
 <div class="container">
-    <div class="card-header"> <a href=""></a>
+    <div class="card-header">
         Manage Vacancies
-        <button class="btn btn-primary text-white"><a href="{{route('admin.vacancies.create')}}">Create Job</a></button>
+        <button class="btn btn-primary ">
+            <a href="{{route('admin.vacancies.create')}}">Create Job</a>
+        </button>
     </div>
     <div class="card-body">
         <table class="table table-hover">

@@ -12,28 +12,35 @@
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="/">We - Recruit</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('vacancies.index') }}">Vacancies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Explore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('vacancies.index') }}">Vacancies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
+                    </li>
+                </ul>
+            </div>    
         </div>
     </nav>
-    <div class="container py-5" style="max-height: 1800px;">
-        <div class="row p-5">
-            <div class="col-sm-6 mt-5">
-                <h1>Land your first job with us!</h1>
-                <p>Join a network of the world's best developers & get full-time, long-term remote software jobs with better compensation and career growth.</p>
-                <button class="btn btn-primary btn-lg m-1">Get started</button>
-            </div>
-            <div class="col-sm-6">
-                <img src=" {{ asset('/images/iStock.jpg') }}" alt="">
+    <div class="header-container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 p-5">
+                    <h1>The job of your dreams awaits you!</h1>
+                    <p>Join a network of the world's best developers & get full-time, long-term remote software jobs with better compensation and career growth.</p>
+                    <button class="btn btn-primary btn-lg m-1">Get started</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src=" {{ asset('/images/iStock.jpg') }}" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -57,35 +64,40 @@
             </div>
         </div>
     </div>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-4 p-4">
-                <img src=" {{ asset('/images/community.jpg') }}" alt="">
-            </div>
-            <div class="col-lg-8 p-4">
-                <h1>Let us help you find your next career.</h1>
-                <p>Explore over one million jobs and internships that are updated daily. 
-                   Easily search, apply and start your career on We-Recruit’s job board.
-                   engagements are full-time and long-term. As one project nears completion, our team goes to work to identify the next one for you within weeks.
-                </p>
-                <button class="btn btn-primary btn-lg m-1">
-                    <a href="{{ route('vacancies.index') }}">Find vacancies.</a>
-                </button>
+    <div class="job-container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 p-4">
+                    <img src=" {{ asset('/images/community.jpg') }}" alt="">
+                </div>
+                <div class="col-lg-8 p-4">
+                    <h1>Let us help you find your next career.</h1>
+                    <p>Explore over one million jobs and internships that are updated daily. 
+                       Easily search, apply and start your career on We-Recruit’s job board.
+                       engagements are full-time and long-term. As one project nears completion, our team goes to work to identify the next one for you within weeks.
+                    </p>
+                    <button class="btn btn-primary btn-lg m-1">
+                        <a href="{{ route('vacancies.index') }}">Find vacancies.</a>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 p-4">
-                <h1>Join the community of best remote engineers</h1>
-                <p>Sign-up to our blog to be updated on the latest jobs and newsletter. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Incidunt fugit eligendi quae, explicabo laudantium dignissimos tempora, ipsum suscipit voluptas est nihil impedit doloribus quasi porro, necessitatibus nemo ad officia cum.</p>
-                   <button class="btn btn-primary btn-lg m-1">
-                    <a href="{{ route('vacancies.index') }}">Join our blog.</a>
-                </button>
-            </div>
-            <div class="col-lg-4 p-4">
-                <img src=" {{ asset('/images/community.png') }}" alt="">
+    <div class="blog-container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 py-5">
+                    <h1>Join the community of best engineers</h1>
+                    <p>Sign-up to our blog to be updated on the latest jobs and newsletter. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Incidunt fugit eligendi quae, explicabo laudantium dignissimos tempora, ipsum suscipit voluptas est nihil impedit doloribus quasi porro, necessitatibus nemo ad officia cum.
+                    </p>
+                    <button class="btn btn-primary btn-lg m-1">
+                        <a href="{{ route('vacancies.index') }}">Join our blog.</a>
+                    </button>
+                </div>
+                <div class="col-lg-4">
+                    <img src=" {{ asset('/images/community.png') }}" alt="">
+                </div>
             </div>
         </div>
     </div>

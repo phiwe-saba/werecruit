@@ -7,26 +7,30 @@
     crossorigin="anonymous" />
     <link href = "{{ asset('../css/admin.css')}}" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>@yield('title', 'Admin - Online Store')</title>
+    <title>We - Recruit</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="/">We - Recruit</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Applications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('vacancies.index') }}">Logout</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.vacancies.index') }}">Manage Vacancies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.applications.index') }}">Manage Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.applications.index') }}">Logout</a>
+                    </li>
+                </ul>
+            </div>    
         </div>
     </nav>
-    
     <div>
         @yield('content')
     </div>

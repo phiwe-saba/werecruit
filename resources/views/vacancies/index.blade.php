@@ -1,47 +1,35 @@
 @extends('layouts.nav')
 @section('content')
 
-    <div class="container">
-        <div class="header-section">
-            <h1>Find your next job or internship</h1>
-            <p>Explore available jobs</p>
-        </div>
-        <input type="text" name="job_title" placeholder="Job title" value="{{ request('job_title') }}">
-        <div class="dropdown">
-            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
-              Job Title
-            </button>
-            <select name="location" >
-                <option selected="">Select location</option>
-                <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
-                <option value="Cape Town" {{ request('location') === 'Cape Town' ? 'selected' : ''}}>Cape Town</option>
-                <option value="Durban" {{ request('location') === 'Durban' ? 'selected' : ''}}>Durban</option>
-                <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
-                <option value="Port Elizabeth" {{ request('location') === 'Port Elizabeth' ? 'selected' : ''}}>Port Elizabeth</option>
-                <option value="Northen Cape" {{ request('location') === 'Northen Cape' ? 'selected' : ''}}>Northen Cape</option>
-            </select>
-            
-        </div>
-        <div class="content-bar">
-            <form action="{{ route('vacancies.index') }}" method="GET">
-                <input type="text" name="job_title" placeholder="Job title" value="{{ request('job_title') }}">
-                <select name="location" class="location">
-                    <option selected="">Select location</option>
-                    <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
-                    <option value="Cape Town" {{ request('location') === 'Cape Town' ? 'selected' : ''}}>Cape Town</option>
-                    <option value="Durban" {{ request('location') === 'Durban' ? 'selected' : ''}}>Durban</option>
-                    <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
-                    <option value="Port Elizabeth" {{ request('location') === 'Port Elizabeth' ? 'selected' : ''}}>Port Elizabeth</option>
-                    <option value="Northen Cape" {{ request('location') === 'Northen Cape' ? 'selected' : ''}}>Northen Cape</option>
-                </select>
-                <select name="job_type" class="job-type">
-                    <option selected="">Select job type</option>
-                    <option value="Hybrid" {{ request('job_type') === 'Hybrid' ? 'selected' : ''}}>Hybrid</option>
-                    <option value="Remote" {{ request('job_type') === 'Remote' ? 'selected' : ''}}>Remote</option>
-                    <option value="On-site" {{ request('job_type') === 'On-site' ? 'selected' : ''}}>On-site</option>
-                </select>
-                <button type="submit">Search</button>  
-            </form>
+    <div class="search-bar">
+        <div class="container">
+            <div class="header-section">
+                <h1>Find your next job or internship</h1>
+                <p>Explore available jobs</p>
+            </div>
+            <div class="content-bar">
+                <form action="{{ route('vacancies.index') }}" method="GET">
+                    <div class="search-content">
+                        <input type="text" name="job_title" placeholder="Job title" value="{{ request('job_title') }}">
+                        <select name="location" class="location">
+                            <option selected="">Select location</option>
+                            <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                            <option value="Cape Town" {{ request('location') === 'Cape Town' ? 'selected' : ''}}>Cape Town</option>
+                            <option value="Durban" {{ request('location') === 'Durban' ? 'selected' : ''}}>Durban</option>
+                            <option value="Gauteng" {{ request('location') === 'Gauteng' ? 'selected' : ''}}>Gauteng</option>
+                            <option value="Port Elizabeth" {{ request('location') === 'Port Elizabeth' ? 'selected' : ''}}>Port Elizabeth</option>
+                            <option value="Northen Cape" {{ request('location') === 'Northen Cape' ? 'selected' : ''}}>Northen Cape</option>
+                        </select>
+                        <select name="job_type" class="job-type">
+                            <option selected="">Select job type</option>
+                            <option value="Hybrid" {{ request('job_type') === 'Hybrid' ? 'selected' : ''}}>Hybrid</option>
+                            <option value="Remote" {{ request('job_type') === 'Remote' ? 'selected' : ''}}>Remote</option>
+                            <option value="On-site" {{ request('job_type') === 'On-site' ? 'selected' : ''}}>On-site</option>
+                        </select>
+                        <button type="submit">Search</button> 
+                    </div> 
+                </form>
+            </div>
         </div>
     </div>
 

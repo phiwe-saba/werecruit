@@ -40,7 +40,6 @@ class AdminVacancyController extends Controller
 
     public function edit(Vacancy $vacancy)
     {
-        //$vacancy = Vacancy::findOrFail($id);
         return view('admin.vacancies.edit', compact('vacancy'));
     }
 
@@ -56,6 +55,7 @@ class AdminVacancyController extends Controller
 
         $vacancy->update($viewData);
 
+        dd($vacancy);
         return redirect()->route('admin.vacancies.index')->with('success', 'Vacancy updated successfully!');
     }
 
