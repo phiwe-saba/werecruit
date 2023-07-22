@@ -9,7 +9,7 @@ nav{
 }
 
 /* Main Section */
-.container .col-sm-6 img{
+.container .col-lg-6 img{
     max-width: 100%;
 }
 
@@ -31,7 +31,7 @@ nav{
     max-width: 100%;
 }
 
-/* Search bar 
+/* Search bar */
 .search-bar{
     background-color: #E5E7EB;
     min-height: 55vh;
@@ -49,7 +49,7 @@ nav{
 .search-bar .header-section p{
     font-size: 35px;
 }
-*/
+
 .content-bar{
     text-align:center;
     padding-bottom: 10px;
@@ -68,6 +68,7 @@ input, select, button{
     font-size:18px;
     color:grey;
 }
+
 .content-bar button{
     background-color: rgb(66, 125, 214);
     border:1px;
@@ -130,84 +131,43 @@ footer{
     color: white;
 }
 
-@media(max-width: 768px){
-    .navbar .container ul li{
+@media(max-width: 990px){
+    .navbar .container .navbar-nav .nav-item .nav-link{
         font-size: 15px;
-    }
-
-    .navbar .container ul li a{
+        padding-right: 10px;
         margin: 0;
     }
 
-    .navbar .container .logo{
+    .navbar .container .navbar-brand{
         font-size: 20px;
     }
 
-    .header .container{
+    /* Header */
+    .container .row{
         flex-direction:column-reverse;
         text-align: center;
     }
 
-    .header img{
-        max-width: 100%;
-        height: auto;
+    /* Boxes */
+    .container .d-flex{
+        flex-direction: column;
     }
 
-    .header .container h1{
-        font-size: x-large;
+    .container .d-flex .p-2{
+        margin: 15px;
+    }
+
+    .job-container .container .row{
+        flex-direction: column;
         text-align: center;
     }
 
-    .header .container p{
-        font-size: larger;
+    .blog-container{
         text-align: center;
     }
 
-    .header .container button{
-        font-size: 15px;
-        margin: 10px;
-        padding: 10px;
-    }
-    .main-section .container{
-        flex-direction:column-reverse;
-        text-align: center;
-    }
-
-    .main-section .container .box{
-        margin: 25px;
-    }
-
-    .body-section .container{
-        flex-direction:column;
-        text-align: center;
-        padding: 25px;
-    }
-
-    .body-section .container img{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .body-section .container button{
-        font-size: 15px;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .blog-section .container{
-        text-align: center;
-        flex-direction:column-reverse;
-        padding: 25px;
-    }
-
-    .blog-section .container img{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .blog-section .container button{
-        font-size: 15px;
-        margin: 10px;
-        padding: 10px;
+    /* Search bar */
+    .search-bar .content-bar{
+        flex-direction: column;
     }
 }
