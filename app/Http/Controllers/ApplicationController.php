@@ -33,7 +33,7 @@ class ApplicationController extends Controller
  
         $vacancy->applications()->save($application);
         
-        return redirect()->route('vacancies.index')->with('success', 'Successfully applied.');
+        return redirect()->route('vacancies.edit')->with('success', 'Successfully applied.');
     }
 
     public function destroy(Application $applicant)

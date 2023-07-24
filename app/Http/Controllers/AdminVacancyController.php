@@ -30,7 +30,7 @@ class AdminVacancyController extends Controller
 
         $vacancy = Vacancy::create($viewData);
 
-        return redirect()->route('admin.vacancies.show', $vacancy->id)->with('success', 'Vacancy created successfully!');
+        return redirect()->route('admin.vacancies.show', $vacancy->id)->with('message', 'Vacancy created successfully!');
     }
 
     public function show(vacancy $vacancy)
@@ -56,15 +56,14 @@ class AdminVacancyController extends Controller
         $vacancy->update($viewData);
 
         dd($vacancy);
-;
-
-}
+        return redirect()->route('admin.vacancies.index')->with('message', 'Vacancy updated successfully!');
+    }
 
     public function destroy($id)
     {
         $vacancy = Vacancy::findOrFail($id);
         $vacancy->delete();
 
-        return redirect()->route('admin.vacancies.index')->with('success', 'Vacancy deleted successfully!');
+        return redirect()->route('admin.vacancies.index')->with('message', 'Vacancy deleted successfully!');
     }
 }
