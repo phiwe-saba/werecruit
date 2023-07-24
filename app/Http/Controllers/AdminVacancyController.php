@@ -56,8 +56,9 @@ class AdminVacancyController extends Controller
         $vacancy->update($viewData);
 
         dd($vacancy);
-        return redirect()->route('admin.vacancies.index')->with('success', 'Vacancy updated successfully!');
-    }
+;
+
+}
 
     public function destroy($id)
     {
