@@ -44,10 +44,21 @@ nav{
 .container .admin{
     padding: 50px;
 }
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
 /* Footer */
 footer{
     text-align: center;
     background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
     padding: 15px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
     color: white;
 }
