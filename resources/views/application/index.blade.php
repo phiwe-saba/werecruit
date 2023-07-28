@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 @section('content')
   <div class="container">
     <form action="{{ route('application.store') }}" method="POST" enctype="multipart/form-data">

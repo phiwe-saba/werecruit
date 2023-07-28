@@ -123,11 +123,29 @@ button a{
     color: white
 }
 
+/* Show details */
+.container .details{
+    text-align: center;
+}
+
+.container .details h3{
+    font-size: 50px;
+}
+
+.container .details p{
+    font-size: 25px;
+}
+
 /* Footer */
 footer{
     text-align: center;
     background-image: linear-gradient(40deg,rgb(66, 125, 214), rgb(189, 25, 189));
     padding: 15px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
     color: white;
 }
 

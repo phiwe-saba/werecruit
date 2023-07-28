@@ -42,7 +42,7 @@ Route::delete('admin/applications/{id}', 'App\Http\Controllers\AdminApplicationC
 Route::get('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@create')->name('application.create');
 Route::post('/vacancies/{vacancy}/application', 'App\Http\Controllers\ApplicationController@store')->name('application.store');
 
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('/auth/login', 'App\Http\Controllers\Auth\LoginController@login')->name('auth.login');
