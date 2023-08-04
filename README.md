@@ -1,13 +1,9 @@
 ## We - Recruit: Demo
 - Purpose of this project is to showcase my development skills using Laravel, MySQL, Bootstrap, HTML, CSS and GIT.
 
-## Project Functionalities
+## User Functionalities
 - User can browse the vacancies and view them
 - Apply for the job thier interested in without having to fillout any information other than their name, surname, email and attach thier resume.
-
-## Admin functionalities
-- Administrator will login and create, update and delete the vacancies.
-- Administrator will also be to view the applications received and either accept or reject the applications.
   
 ## Welcome Page
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/f511de73-a85b-4e67-8efa-376762e84875)
@@ -25,6 +21,10 @@
 
 ## ADMIN SIDE
 
+## Admin functionalities
+- Administrator will login and create, update and delete the vacancies.
+- Administrator will also be to view the applications received and either accept or reject the applications.
+  
 ## Admin Dashboard
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/6556d047-e8c0-4757-8e99-b8ac6ed527d1)
 
