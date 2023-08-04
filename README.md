@@ -4,8 +4,16 @@
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/f511de73-a85b-4e67-8efa-376762e84875)
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/64b4e91f-1095-4087-a7fd-c50b48aa1c19)
 
+## Vacancies Page
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/52045061-d51d-4804-aa24-3716e7da3b94)
 
-## About Laravel
+
+## View job details
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/e9002bfe-06a0-4d3b-874f-fbf470c989e9)
+
+## Apply for the job
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/efe46323-dec8-4721-aefb-80c70a528c90)
+
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
