@@ -11,6 +11,7 @@
 
 ## Vacancies Page
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/52045061-d51d-4804-aa24-3716e7da3b94)
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/cd9a82f5-9b7d-4f85-9b7b-9147446a7761)
 
 
 ## View job details
