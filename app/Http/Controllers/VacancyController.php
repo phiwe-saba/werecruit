@@ -44,7 +44,7 @@ class VacancyController extends Controller
             'job_type' => 'required'
         ]); 
 
-        return redirect()->route('vacancies.show');
+        return redirect()->route('vacancies.show')->with('success', 'Vacancy created successfully.');;
     }
 
     public function show(Vacancy $vacancy, $id)
@@ -64,6 +64,6 @@ class VacancyController extends Controller
         $vacancy = Vacancy::findOrFail($id);
         $vacancy->delete();
 
-        return redirect()->route('vacancies.index');
+        return redirect()->route('vacancies.index')->with('success', 'Vacancy created successfully.');;
     }
 }

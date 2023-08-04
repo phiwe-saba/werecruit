@@ -31,9 +31,9 @@ nav{
     max-width: 100%;
 }
 
-.card-header button{
+.header button{
     float:right;
-    margin: 65px 65px 0 0;
+    margin-right: 90px;
 }
 
 .card-header button a{

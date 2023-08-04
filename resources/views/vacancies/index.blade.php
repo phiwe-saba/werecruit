@@ -1,4 +1,5 @@
 @extends('layouts.nav')
+@section('title', 'We - Recruit | Vacancies')
 @section('content')
 
     <div class="search-bar">

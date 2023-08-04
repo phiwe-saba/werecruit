@@ -2,9 +2,7 @@
 @section('title', "")
 @section('content')
 <div class="container">
-    <div class="card-header">
-        Manage Applications
-    </div>
+    <h5 class="py-3">Manage Applications</h5>
     <table class="admin table table-hover">
         <thead>
             <tr>

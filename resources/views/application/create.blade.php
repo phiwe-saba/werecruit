@@ -2,6 +2,15 @@
 @section('content')
   <div class="container">
     <div class="d-flex justify-content-center">
+      @if(Session::has('success'))
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert">
+            <i class="fa fa-times"></i>
+            </button>
+            <strong>Success !</strong> {{ session('success') }}
+        </div>
+        <span class="text-success">{{ session('success') }}</span>
+      @endif
       <form method="POST" action="{{ route('application.store', $vacancy) }}" enctype="multipart/form-data">
         @csrf  
         <h2><a href="{{ route('vacancies.index') }}">We - Recruit</a></h2>

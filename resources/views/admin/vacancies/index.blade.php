@@ -2,9 +2,9 @@
 @section('title', "")
 @section('content')
 <div class="container">
-    <div class="card-header py-3">
-        Manage Vacancies
-        <button class="btn btn-primary mt-5">
+    <h5 class="py-3">Edit Vacancy</h5>
+    <div class="header">
+        <button class="btn btn-primary">
             <a href="{{route('admin.vacancies.create')}}">Create Job</a>
         </button>
     </div>
