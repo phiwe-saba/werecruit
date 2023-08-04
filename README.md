@@ -1,5 +1,14 @@
 ## We - Recruit: Demo
+- Purpose of this project is to showcase my development skills using Laravel, MySQL, Bootstrap, HTML, CSS and GIT.
 
+## Project Functionalities
+- User can browse the vacancies and view them
+- Apply for the job thier interested in without having to fillout any information other than their name, surname, email and attach thier resume.
+
+## Admin functionalities
+- Administrator will login and create, update and delete the vacancies.
+- Administrator will also be to view the applications received and either accept or reject the applications.
+  
 ## Welcome Page
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/f511de73-a85b-4e67-8efa-376762e84875)
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/64b4e91f-1095-4087-a7fd-c50b48aa1c19)
@@ -14,59 +23,13 @@
 ## Apply for the job
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/efe46323-dec8-4721-aefb-80c70a528c90)
 
+## ADMIN SIDE
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Admin Dashboard
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/6556d047-e8c0-4757-8e99-b8ac6ed527d1)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Applications received
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/9cc062ca-d47c-47dd-b378-33f697bf89de)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Vacancies available
+![image](https://github.com/phiwe-saba/werecruit/assets/74997133/a99761b1-1f54-40b7-9f51-dd1f073465ae)
