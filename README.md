@@ -2,8 +2,10 @@
 - Purpose of this project is to showcase my development skills using Laravel, MySQL, Bootstrap, HTML, CSS and GIT.
 
 ## User Functionalities
-- User can browse the vacancies and view them
-- Apply for the job thier interested in without having to fillout any information other than their name, surname, email and attach thier resume.
+- Developed a responsive web application for browsing and applying for jobs.
+- Utilized Laravel for the back-end functionalities and HTML, CSS and Bootstrap for the front-end.
+- Implemented job section, application page and admin dashboard to create and view applications.
+- Gained experience creating and maintaining data using MySQL database.
   
 ## Welcome Page
 ![image](https://github.com/phiwe-saba/werecruit/assets/74997133/f511de73-a85b-4e67-8efa-376762e84875)
